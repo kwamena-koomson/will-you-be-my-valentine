@@ -10,6 +10,35 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  /* ✅ Four images in each corner */
+  background-image: 
+    url('top-left.jpeg'),
+    url('top-right.jpeg'),
+    url('bottom-left.jpeg'),
+    url('bottom-right.jpeg');
+
+  /* Set each image’s position */
+  background-position: 
+    top left,       /* top-left corner */
+    top right,      /* top-right corner */
+    bottom left,    /* bottom-left corner */
+    bottom right;   /* bottom-right corner */
+
+  /* Prevent tiling */
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+
+  /* Optional: size of each image (adjust as needed) */
+  background-size: 500px 500px, 500px 500px, 500px 500px, 500px 500px;
+
+  height: 100vh;
+}
+
+
 h1 {
   font-size: 40px;
 }
@@ -48,4 +77,12 @@ h1 {
   background-color: rgb(255, 0, 0);
   font-size: 20px;
   cursor: pointer;
+}
+
+.love-gif {
+  width: 250px;       /* desired width */
+  height: auto;       /* maintain aspect ratio */
+  max-width: 100%;    /* don’t overflow container */
+  flex-shrink: 1;     /* allow shrinking inside flex container */
+  margin-bottom: 20px; /* spacing from h1 */
 }
